@@ -1,0 +1,5 @@
+tareas-administrativas/
+│
+├── app.py                 # Archivo principal de la aplicación
+├── templates/
+│   └── index.html         # Plantilla HTML principal

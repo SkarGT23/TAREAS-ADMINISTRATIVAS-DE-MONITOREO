@@ -1,0 +1,77 @@
+La aplicación es un monitor de recursos del sistema diseñado para mostrar información en tiempo real sobre el uso de la CPU y la memoria de un sistema, además de permitir la gestión de los procesos en ejecución. A continuación, un resumen de las funcionalidades:
+
+Funcionalidades principales:
+Visualización de la Gráfica de Recursos:
+
+Muestra una gráfica en tiempo real que representa el uso de los recursos del sistema (CPU y memoria).
+Los porcentajes de uso de CPU y memoria se muestran de forma destacada junto a la gráfica.
+La gráfica se actualiza automáticamente cada 5 segundos.
+Si el uso de CPU o memoria supera un umbral predefinido (90%), se muestra una alerta de sobrecarga.
+Gestión de Procesos:
+
+Muestra una tabla de procesos en ejecución, con información como:
+PID (Identificador de proceso)
+Nombre del proceso
+Porcentaje de uso de CPU y memoria de cada proceso.
+Permite terminar procesos seleccionando el botón "Terminar" al lado de cada proceso.
+Botones de Interacción:
+
+Ver/ocultar gráfica: Botones para mostrar y ocultar la gráfica de recursos.
+Ver/ocultar procesos: Botones para ver la lista de procesos en ejecución.
+Descargar PDF: Opción para generar y descargar un archivo PDF con los datos de la sesión.
+Alertas:
+
+La aplicación muestra una alerta visual cuando el uso de CPU o memoria está demasiado alto.
+Interactividad y Estilo:
+
+Interfaz de usuario limpia y moderna usando Bootstrap y una tipografía agradable (Poppins).
+Toastify se utiliza para mostrar notificaciones de éxito o error al interactuar con la aplicación (por ejemplo, al terminar un proceso).
+Spinner de carga para mostrar que los datos se están actualizando o procesando.
+Resumen del flujo:
+El sistema monitoriza el uso de los recursos y la lista de procesos.
+Los datos se actualizan en tiempo real (cada 5 segundos).
+Los usuarios pueden ver gráficos y gestionar procesos, como terminar procesos que están consumiendo demasiados recursos.
+La aplicación avisa cuando el sistema está sobrecargado y permite la descarga de la información en formato PDF.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+# Monitor de Recursos del Sistema
+
+Este proyecto es una **aplicación web** diseñada para monitorear el uso de recursos del sistema, específicamente el uso de **CPU** y **memoria**, así como gestionar los procesos en ejecución en el sistema. La aplicación ofrece una interfaz visual y en tiempo real que permite al usuario ver gráficos de los recursos, obtener información detallada sobre los procesos y tomar acciones para finalizar los procesos que están consumiendo demasiados recursos.
+
+## Características
+
+- **Monitorización de recursos**: Visualiza el uso en tiempo real de la CPU y la memoria del sistema en una gráfica.
+- **Alertas de sobrecarga**: Recibe alertas cuando el uso de CPU o memoria supera un umbral predefinido (90%).
+- **Gestión de procesos**: Visualiza los procesos en ejecución y termina aquellos que están consumiendo demasiados recursos.
+- **Interactividad**: Los botones permiten alternar entre la visualización de gráficos, procesos y otras acciones.
+- **Descarga de PDF**: Opción para generar un PDF con los datos del monitoreo.
+- **Interfaz moderna y responsiva**: Basada en **Bootstrap** para asegurar que la aplicación se vea bien en todos los dispositivos.
+
+## Tecnologías Usadas
+
+- **HTML5**: Estructura básica de la página web.
+- **CSS3**: Estilos modernos usando una fuente personalizada (Poppins) y un diseño limpio con **Bootstrap**.
+- **JavaScript (jQuery)**: Lógica para actualizar dinámicamente los gráficos, la tabla de procesos y manejar las interacciones del usuario.
+- **Toastify.js**: Para mostrar notificaciones emergentes (toast) cuando se interactúa con los procesos (por ejemplo, al matar un proceso).
+- **API Backend**: La aplicación se conecta a un servidor backend para obtener los datos de los procesos y recursos del sistema (requiere una API compatible).
+
+## Funcionalidades
+
+1. **Ver Gráfica**:
+   - Visualiza el uso de recursos del sistema en tiempo real.
+   - La gráfica muestra el porcentaje de uso de CPU y memoria.
+   - La gráfica se actualiza cada 5 segundos.
+   - Si el uso de CPU o memoria supera el 90%, se muestra una alerta visual.
+
+2. **Ver Procesos**:
+   - Muestra una lista de los procesos en ejecución en el sistema.
+   - Para cada proceso, se muestra el PID, nombre, y el porcentaje de uso de CPU y memoria.
+   - Puedes **terminar un proceso** seleccionando el botón correspondiente.
+
+3. **Descargar PDF**:
+   - Permite generar y descargar un archivo PDF con la información actual sobre los recursos del sistema.
+
+4. **Alerta de Sobrecarga**:
+   - Si el uso de CPU o memoria supera el umbral del 90%, se muestra una alerta de sobrecarga.
